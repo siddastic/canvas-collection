@@ -1,5 +1,11 @@
-import {SmurfEngine} from "smurf-engine";
+import {Scene} from "smurf-engine";
+import { GalacticLightTrails } from "./components/galactic-light-trail";
+import engine from "./setup";
 
-const canvas = document.querySelector("canvas")!;
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+
+const scene = new Scene();
+
+
+scene.addGameObject(GalacticLightTrails);
+
+engine.loadScene(scene);
