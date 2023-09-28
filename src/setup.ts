@@ -5,6 +5,6 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const engine = new SmurfEngine(canvas);
-engine.clearCanvas = () => {};
+// engine.clearCanvas = () => {};
 
 export default engine;
